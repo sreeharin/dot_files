@@ -15,12 +15,12 @@ hc keyunbind --all
 
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
-Mod=Mod1    # Use alt as the main modifier
-#Mod=Mod4   # Use the super key as the main modifier
+#Mod=Mod1    # Use alt as the main modifier
+Mod=Mod4   # Use the super key as the main modifier
 
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
-hc keybind $Mod-Shift-c close
+hc keybind $Mod-q close
 hc keybind $Mod-Return spawn kitty # use your $TERMINAL with xterm as fallback
 
 
@@ -128,7 +128,7 @@ hc set frame_gap 3
 
 hc attr theme.title_height 0
 hc attr theme.title_when always
-hc attr theme.title_font 'Source Sans:pixelsize=12'  # example using Xft
+hc attr theme.title_font 'Source Code Pro:pixelsize=12'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.title_depth 5  # space below the title's baseline
 hc attr theme.active.color '#35858B'
@@ -157,11 +157,11 @@ done
 hc attr theme.tiling.outer_width 0.2
 hc attr theme.background_color '#141414'
 
-hc set window_gap 0
-hc set frame_padding 0
-hc set smart_window_surroundings off
+hc set window_gap 3
+hc set frame_padding 3
+hc set smart_window_surroundings on
 hc set smart_frame_surroundings on
-hc set mouse_recenter_gap 0
+hc set mouse_recenter_gap 3
 
 # rules
 hc unrule -F
