@@ -201,3 +201,7 @@ feh --bg-scale ~/.config/herbstluftwm/wallpaper/nasa.png
 killall -q polybar
 polybar
 
+#Brightness control
+hc keybind XF86MonBrightnessUp spawn /home/shn/.config/scripts/brightness_increase.sh
+hc keybind XF86MonBrightnessDown spawn /home/shn/.config/scripts/brightness_decrease.sh
+
