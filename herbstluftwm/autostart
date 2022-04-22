@@ -128,7 +128,7 @@ hc set frame_gap 3
 
 hc attr theme.title_height 0
 hc attr theme.title_when always
-hc attr theme.title_font 'Source Code Pro:pixelsize=12'  # example using Xft
+hc attr theme.title_font 'JetBrainsMono:pixelsize=12'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.title_depth 5  # space below the title's baseline
 hc attr theme.active.color '#35858B'
@@ -200,6 +200,9 @@ feh --bg-scale ~/.config/herbstluftwm/wallpaper/nasa.png
 #Polybar
 killall -q polybar
 polybar
+
+#Picom
+picom &
 
 #Brightness control
 hc keybind XF86MonBrightnessUp spawn /home/shn/.config/scripts/brightness_increase.sh

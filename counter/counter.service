@@ -1,0 +1,8 @@
+[Unit]
+Description=Break time service
+
+[Service]
+ExecStart=/home/shn/Lab/C/counter/counter
+
+[Install]
+WantedBy=multi-user.target
